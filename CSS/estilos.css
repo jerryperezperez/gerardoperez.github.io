@@ -9,7 +9,8 @@
     display: flex;
     background-color: bisque;
 }
-.menuItem { 
+
+.menuItem {
     background-color: violet;
     display: inherit;
     width: 100%;
@@ -28,3 +29,76 @@
     background-color: aqua;
 }
 
+#mobileCheckbox,
+#labelMobileCheckbox {
+    display: none;
+}
+
+#labelMobileCheckbox i {
+    font-size: 7vh;
+}
+
+@media (max-width: 700px) {
+    #menu {
+        display: none;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        margin-bottom: 1vh;
+    }
+    div{
+        text-align: right;
+    }
+
+    #labelMobileCheckbox {
+        display: inline-block;
+ 
+        background-color: yellow;
+        cursor: pointer;
+    }
+    #labelMobileCheckbox i{
+        background-color: aqua;
+    }
+
+    #mobileCheckbox:checked~#menu {
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+
+
+
+    /* codigo prueba */
+
+
+    /* #marca{
+        height: 50px;
+        width: 100%;
+        background-color: green;
+        text-align: center;
+      }
+      
+      #marca img{
+        height: 100%;
+      }
+      
+      #menu2{
+         position: sticky;
+         top: 0; 
+         height: 100px;
+         width: 100%;
+         background-color: red;
+      }
+      
+      #contenido{
+         height: 1200px;
+         width: 100%;
+         background-color: yellow;
+      } */
+
+
+    /* codigo prueba */
+}
