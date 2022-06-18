@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    list-style-type: none;
+    height: 10vh;
+    display: flex;
+    background-color: bisque;
+}
+.menuItem { 
+    background-color: violet;
+    display: inherit;
+    width: 100%;
+}
+
+.menuItem a {
+    width: 100%;
+    background-color: brown;
+    text-decoration: none;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuItem a:hover {
+    background-color: aqua;
+}
+
