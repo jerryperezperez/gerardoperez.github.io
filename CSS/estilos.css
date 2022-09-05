@@ -1,24 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Rubik:ital,wght@0,600;1,300;1,600;1,700&family=Ubuntu&family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-size: large;
+    font-family: 'Roboto Flex', sans-serif;
 }
 
-#menu {
-    list-style-type: none;
-    height: 10vh;
+body {
+    background-color: #0D1117;
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+
+}
+
+.curriculum {
+    text-align: center;
+    padding: 2vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .5vh;
+    font-size: xx-large;
+}
+
+/* Código para el eú superior */
+header {
+    width: 100%;
+    margin: 0% 0 2vh 0;
+}
+
+#navBar {
+    height: inherit;
+    width: inherit;
+}
+
+.menuStyle {
+    border-bottom: 2px solid wheat;
+    border-top: 2px solid wheat;
+    padding: 2vh 0;
+    height: inherit;
+    width: inherit;
     display: flex;
-    background-color: bisque;
+    list-style-type: none;
 }
 
 .menuItem {
-    background-color: violet;
+    width: inherit;
     display: inherit;
-    width: 100%;
 }
 
 .menuItem a {
-    width: 100%;
-    background-color: brown;
+    background-color: #0D1117;
+    color: #EB9E09;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    transition: .3s ease-in-out;
+    width: inherit;
     text-decoration: none;
     display: inherit;
     justify-content: center;
@@ -26,79 +73,294 @@
 }
 
 .menuItem a:hover {
-    background-color: aqua;
+    font-size: 1.7em;
 }
 
-#mobileCheckbox,
-#labelMobileCheckbox {
+.mobileMenu {
     display: none;
 }
 
-#labelMobileCheckbox i {
-    font-size: 7vh;
+#hamburger {
+    cursor: pointer;
 }
 
-@media (max-width: 700px) {
-    #menu {
+.bar {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+    background-color: black;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/* Fin del código del menú superior */
+
+/* Comienzo código main */
+.container {
+    display: flex;
+}
+
+img {
+    border-radius: 20%;
+    width: 80%;
+    height: 60%;
+}
+
+aside {
+    width: 40%;
+    text-align: center;
+    padding: 1% 2%;
+
+
+}
+
+aside span {
+    font-weight: bolder;
+}
+
+aside a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 2vh 0;
+}
+
+aside p {
+    font-family: 'Arimo', sans-serif;
+    padding: 1.5vh 3%;
+
+}
+
+main {
+    padding: 1% 0;
+
+}
+
+#about {
+    padding: 5vh 5vw;
+    width: 60%;
+}
+
+#about p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: x-large;
+}
+
+#listExperience {
+    padding-top: 3vh;
+}
+
+.itemExperience {
+    padding: 2vh 0;
+    font-size: x-large;
+    color: #DEA32F;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.personalInformation {
+    text-align: justify;
+}
+
+
+.tecnologyTitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: x-large;
+    justify-content: center;
+    text-align: center;
+    margin: 2vh;
+    color: white;
+}
+
+.technologyContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 5vw;
+    padding: 0 3vw;
+}
+
+.technology {
+    background-color: white;
+    color: #3879D9;
+    border-radius: 10%;
+    text-align: center;
+    width: 18%;
+    height: 19%;
+    margin: 2% 0%;
+    padding: 15px 0 0 0;
+    justify-content: center;
+    transition: .3s all ease;
+}
+
+.technology:hover {
+    width: 19%;
+    height: 20%;
+  
+    
+}
+
+.technology p {
+    font-family: 'Rubik', sans-serif;
+    color: #0D1117;
+    font-size: 4vh;
+}
+
+.technologyIcon {
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 10%;
+}
+
+.containerRepositories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3%;
+}
+
+.repository {
+    border-radius: 10%;
+    text-align: center;
+    margin: 2% 0%;
+    justify-content: center;
+    border-radius: 10%;
+    margin: 2% 0;
+    width: 20%;
+    transition: .3s all ease;
+}
+.repository a:hover{
+    background-color:#161B22;
+}
+
+.repository a {
+    background-color: #13233A;
+    padding: 15px 0 0 0;
+    display: block;
+    color: #ABCDFF;
+    font-family: 'Work Sans', sans-serif;
+    height: 100%;
+    text-align: justify;
+    text-decoration: none;
+    border-radius: 5%;
+    padding: 4%;
+transition: .3s ease;
+}
+
+.repository a h2 {
+    padding: 3% 2%;
+    color: #EB9E09;
+}
+
+footer {
+    text-align: center;
+    padding: 2% 0;
+    background-color: #161B22;
+}
+
+.containerContactElement {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contactElement {
+    width: 30%;
+    transition: .3s ease-in;
+}
+
+.contactElement:hover {
+    width: 35%;
+}
+
+.copyright {
+    display: block;
+}
+
+.copyright p {
+    font-size: 1.6em;
+}
+
+
+
+/* Fin del código main */
+
+@media(max-width:768px) {
+    .menuStyle {
         display: none;
     }
 
-    nav {
-        position: sticky;
-        top: 0;
-        margin-bottom: 1vh;
-    }
-    div{
-        text-align: right;
+    header {
+        position: relative;
+        width: 100%;
     }
 
-    #labelMobileCheckbox {
-        display: inline-block;
- 
-        background-color: yellow;
-        cursor: pointer;
-    }
-    #labelMobileCheckbox i{
-        background-color: aqua;
-    }
-
-    #mobileCheckbox:checked~#menu {
+    .activeMenu {
         display: block;
         text-align: center;
-        margin-bottom: 100px;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all 3s ease-in-out;
     }
 
+    .mobileMenu {
+        height: inherit;
+        width: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0vw;
+    }
 
+    .menuItem a {
+        padding: 3vh 0px;
+        border-bottom: 2px solid wheat;
+    }
 
+    .container {
+        display: block;
+    }
 
-    /* codigo prueba */
-
-
-    /* #marca{
-        height: 50px;
-        width: 100%;
-        background-color: green;
+    aside {
+        width: inherit;
         text-align: center;
-      }
-      
-      #marca img{
-        height: 100%;
-      }
-      
-      #menu2{
-         position: sticky;
-         top: 0; 
-         height: 100px;
-         width: 100%;
-         background-color: red;
-      }
-      
-      #contenido{
-         height: 1200px;
-         width: 100%;
-         background-color: yellow;
-      } */
+    }
 
+    aside img {
+        width: 80%;
+        height: 20%;
+    }
 
-    /* codigo prueba */
+    #about {
+        width: inherit;
+        text-align: justify;
+        padding: 5vh 10vw;
+    }
+
+    .personalInformation {
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .technology {
+        border-radius: 10%;
+        text-align: center;
+        width: 45%;
+        height: inherit;
+        margin: 1% 0%;
+        padding: 10px 0 0 0;
+        justify-content: center;
+    }
+
+    .technology p {
+        font-size: 2.5vh;
+    }
+
+    .repository {
+        width: 60%;
+        min-height: 20vh;
+        margin: 5%;
+    }
+
+    .copyright p {
+        font-size: 1.2em;
+    }
 }
