@@ -1,0 +1,68 @@
+.siteHeader {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    padding: 18px max(24px, calc((100vw - var(--content-width)) / 2));
+    border-bottom: 2px solid #F5DEB3;
+}
+.brand {
+    flex: 0 0 auto;
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+.siteMenu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.siteMenu a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: var(--gold);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease;
+}
+.siteMenu a:hover, .siteMenu a[aria-current="page"] { background: var(--surface); color: #FFD277; }
+.menuToggle { display: none; }
+.pageWidth { width: min(var(--content-width), calc(100% - 48px)); margin: 0 auto; }
+.pageMain { min-height: 62vh; padding-top: 52px; padding-bottom: 64px; }
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.78fr) minmax(0, 1.5fr);
+    gap: clamp(32px, 7vw, 86px);
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 64px;
+}
+.heroCopy { max-width: 700px; }
+.heroCopy h2 { margin: 8px 0 18px; font-size: clamp(2rem, 4.4vw, 3.45rem); line-height: 1.15; letter-spacing: -.025em; }
+.heroCopy > p:not(.eyebrow) { max-width: 650px; color: var(--muted); font-size: 1.1rem; }
+
+.section { padding-top: 24px; padding-bottom: 48px; }
+.sectionHeading { margin-bottom: 22px; }
+.sectionHeading h2, .pageIntro h1 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.2; }
+.pageIntro { max-width: 760px; margin-bottom: 32px; }
+.pageIntro h1 { margin-bottom: 12px; }
+.pageIntro > p:last-child { margin: 0; color: var(--muted); font-size: 1.08rem; }
+.cardGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.cardGridThree { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.timeline { display: grid; gap: 18px; }
+.skillGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.legacySkills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin-bottom: 20px; }
+.iconSkillGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(86px, 1fr)); gap: 12px; }
+.contactMain { min-height: 66vh; }
+.contactGrid { max-width: 940px; }

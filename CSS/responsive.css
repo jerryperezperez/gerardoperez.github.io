@@ -1,0 +1,27 @@
+@media (max-width: 900px) {
+    .siteHeader { padding-left: 24px; padding-right: 24px; }
+    .siteMenu { gap: 0; }
+    .siteMenu a { padding: 8px; font-size: .94rem; }
+    .cardGridThree { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+    .siteHeader { min-height: 70px; flex-wrap: wrap; gap: 0; }
+    .menuToggle { display: flex; width: 42px; height: 42px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; margin-left: auto; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); cursor: pointer; }
+    .menuToggle span { display: block; width: 20px; height: 2px; background: var(--gold); }
+    .siteHeader nav { flex: 1 0 100%; }
+    .siteMenu { display: none; align-items: stretch; padding-top: 12px; }
+    .siteMenu.isOpen { display: flex; flex-direction: column; }
+    .siteMenu a { padding: 10px 12px; border-top: 1px solid var(--border); font-size: 1rem; }
+    .pageWidth { width: min(100% - 36px, var(--content-width)); }
+    .hero { grid-template-columns: 1fr; gap: 30px; padding-top: 36px; padding-bottom: 40px; }
+    .profilePanel { max-width: 460px; justify-self: center; }
+    .profilePhoto { width: min(60vw, 230px); }
+    .heroCopy h2 { font-size: clamp(1.9rem, 9vw, 2.8rem); }
+    .pageMain { padding-top: 36px; padding-bottom: 44px; }
+    .cardGrid, .cardGridThree, .skillGrid, .legacySkills { grid-template-columns: 1fr; }
+    .timelineHeader { flex-direction: column; gap: 8px; }
+    .roleTag { align-self: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}

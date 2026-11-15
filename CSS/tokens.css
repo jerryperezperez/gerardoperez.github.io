@@ -1,0 +1,13 @@
+:root {
+    color-scheme: dark;
+    --background: #0D1117;
+    --surface: #161B22;
+    --surface-raised: #1C2531;
+    --border: #303944;
+    --text: #F0F3F6;
+    --muted: #B1BAC4;
+    --gold: #EB9E09;
+    --gold-light: #DEA32F;
+    --link: #ABCDFF;
+    --content-width: 1120px;
+}
