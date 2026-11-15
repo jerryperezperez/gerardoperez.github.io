@@ -1,97 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gerardo Arturo Pérez Pérez is a Java backend engineer and published researcher in explainable AI and time-series forecasting.">
+    <meta name="theme-color" content="#0D1117">
+    <title>Gerardo Pérez | Backend Engineering &amp; Explainable AI</title>
     <link rel="stylesheet" href="CSS/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Gerardo Pérez. Currículum web</title>
 </head>
-
 <body>
-    <header>
-        <nav id="navBar">
-            <div class="curriculum">
-                Curriculum Web
-            </div>
-            <div class="mobileMenu">
-                <span>Gerardo Arturo Pérez Pérez</span>
-                <div id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-
-            </div>
-            <ul id="menu" class="menuStyle">
-                <li class="menuItem">
-                    <a href="index.html">About me</a>
-                </li>
-                <li class="menuItem">
-                    <a href="tecnologias.html">Technologies</a>
-                </li>
-                <li class="menuItem">
-                    <a href="proyectos.html">Projects</a>
-                </li>
-                <!-- <li class="menuItem">
-                <a href="contacto.php">Contacto</a>
-            </li> -->
+    <header class="siteHeader">
+        <a class="brand" href="index.html">Gerardo Pérez</a>
+        <button class="menuToggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteMenu" aria-label="Open navigation">
+            <span></span><span></span><span></span>
+        </button>
+        <nav aria-label="Main navigation">
+            <ul class="siteMenu" id="siteMenu">
+                <li><a aria-current="page" href="index.html">About</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="proyectos.html">Projects</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="tecnologias.html">Skills</a></li>
+                <li><a href="contacto.html">Contact</a></li>
             </ul>
-
         </nav>
-
     </header>
-    <main class="container">
-        <aside>
-            <img src="img/fotoPerfil.jpeg" alt="" srcset="">
-            <div class="personalInformation">
-                <p><span>Name:</span> Gerardo Arturo Pérez Pérez</p>
-                <p><a href="mailto:jerryperezperez@hotmail.com"><span>Email:</span> jerryperezperez@hotmail.com</a></p>
 
-                <p><a href="https://github.com/jerryperezperez"><span>GitHub:</span> jerryperezperez</a></p>
-                <p><span>Occupation:</span>Certified in Computer Systems Engineering</p>
-                <p><span>Age:</span> 23 years old</p>
-                <p><span>Location:</span> Mérida, Yucatán</p>
+    <main>
+        <section class="hero pageWidth" aria-labelledby="introTitle">
+            <aside class="profilePanel">
+                <img class="profilePhoto" src="img/fotoPerfil.jpeg" alt="Portrait of Gerardo Arturo Pérez Pérez">
+                <h1>Gerardo Arturo Pérez Pérez</h1>
+                <p class="profileRole">Java Backend Engineer · Explainable AI Researcher</p>
+                <ul class="profileDetails">
+                    <li><span>Location</span>Mérida, Yucatán, México</li>
+                    <li><span>Email</span><a href="mailto:jerryperezperez@hotmail.com">jerryperezperez@hotmail.com</a></li>
+                    <li><span>GitHub</span><a href="https://github.com/jerryperezperez" target="_blank" rel="noopener noreferrer">@jerryperezperez</a></li>
+                    <li><span>LinkedIn</span><a href="https://linkedin.com/in/gerardo-arturo-perez-perez-59803524b" target="_blank" rel="noopener noreferrer">Gerardo Pérez</a></li>
+                </ul>
+            </aside>
+            <div class="heroCopy">
+                <p class="eyebrow">Backend engineering · Applied AI · Research</p>
+                <h2 id="introTitle">Building dependable software and making machine learning easier to understand.</h2>
+                <p>I’m a software engineer with experience building backend services for financial and e-commerce systems. My research focuses on explainable AI, case-based reasoning, and time-series forecasting.</p>
+                <p>I enjoy connecting sound engineering practices with research ideas to make systems more reliable, observable, and useful.</p>
+                <div class="buttonRow">
+                    <a class="button" href="experience.html">View experience</a>
+                    <a class="button buttonSecondary" href="proyectos.html">Explore projects</a>
+                </div>
+                <ul class="highlightList">
+                    <li>Java, Spring Boot, REST and GraphQL</li>
+                    <li>Published work on explainable time-series forecasting</li>
+                    <li>Spanish native · English fluent (C1)</li>
+                </ul>
             </div>
+        </section>
 
-        </aside>
-        <section id="about">
-            <p>Programmer with knowledge in web development, machine learning and desktop application development.</p>
+        <section class="section pageWidth" aria-labelledby="featuredTitle">
+            <div class="sectionHeading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="featuredTitle">A few things I’ve worked on</h2>
+            </div>
+            <div class="cardGrid cardGridThree">
+                <article class="infoCard">
+                    <p class="cardKicker">SoftwareX · 2025</p>
+                    <h3>CBR-FoX</h3>
+                    <p>An open-source tool that helps audit and explain time-series predictions using case-based reasoning.</p>
+                    <a class="textLink" href="https://github.com/aaaimx/CBR-FoX" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="infoCard">
+                    <p class="cardKicker">Developer tool</p>
+                    <h3>JDM</h3>
+                    <p>A PowerShell command-line tool for managing Java versions and simplifying local environment setup.</p>
+                    <a class="textLink" href="https://github.com/jerryperezperez/jdm" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="infoCard">
+                    <p class="cardKicker">Research · ICCBR</p>
+                    <h3>Case-based explanations</h3>
+                    <p>Research into using similar past cases to explain machine-learning forecasts.</p>
+                    <a class="textLink" href="https://www.researchgate.net/publication/372286930" target="_blank" rel="noopener noreferrer">Read publication <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
 
-            <ul id="listExperience">
-                <li class="itemExperience">Certificate in Computer Systems Engineering, Bachelor of Science in Computer
-                    Systems Engineering, Instituto Tecnológico de Mérida</li>
-                <li class="itemExperience">Specialized in Artificial Intelligence.</li>
-                <li class="itemExperience">XCBR Challenge 2022 Competitor for explanation Weather Forecasting model.
-                </li>
-                <li class="itemExperience">Speaker at International Conference on Artificial Intelligence for Mental Health (ICAIMH) 2023.
-                </li>
-                <li class="itemExperience">Active member in AAAIMX International Student Chapter.</li>
-            </ul>
+        <section class="section pageWidth" aria-labelledby="recognitionTitle">
+            <div class="sectionHeading">
+                <p class="eyebrow">Certifications &amp; Recognition</p>
+                <h2 id="recognitionTitle">Learning, research, and recognition</h2>
+            </div>
+            <div class="cardGrid cardGridThree">
+                <article class="infoCard">
+                    <p class="cardKicker">Anthropic · Certification</p>
+                    <h3><a class="credentialTitle" href="https://www.credly.com/badges/7378f13a-4bd9-4ad5-adfa-86f556570185" target="_blank" rel="noopener noreferrer">Claude Certified Developer - Foundations</a></h3>
+                    <a class="textLink" href="https://www.credly.com/badges/7378f13a-4bd9-4ad5-adfa-86f556570185" target="_blank" rel="noopener noreferrer">Verify on Credly <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="infoCard">
+                    <p class="cardKicker">Anthropic · Certification</p>
+                    <h3><a class="credentialTitle" href="https://www.credly.com/badges/819f26c3-2fcf-464b-a054-87c5121eff61" target="_blank" rel="noopener noreferrer">Claude Certified Associate - Foundations</a></h3>
+                    <a class="textLink" href="https://www.credly.com/badges/819f26c3-2fcf-464b-a054-87c5121eff61" target="_blank" rel="noopener noreferrer">Verify on Credly <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="infoCard">
+                    <p class="cardKicker">Selected milestones</p>
+                    <ul class="milestoneList">
+                        <li><span>2024</span>Voice of the Management Award · Softtek</li>
+                        <li><span>2023</span>Best Student Talk Award · International Conference on AI in Mental Health</li>
+                        <li><span>2022</span>Participant · International Conference on Case-Based Reasoning</li>
+                    </ul>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="containerContactElement">
-            <div><a href="https://github.com/jerryperezperez">
-                    <img src="img/github.svg" alt="" srcset="" class="contactElement">
-                </a></div>
-            <div><a href="mailto:jerryperezperez@hotmail.com">
-                    <img src="img/email.svg" alt="" srcset="" class="contactElement">
-                </a></div>
-            <div><a href="https://github.com/jerryperezperez">
-                    <img src="img/linkedin4.svg" alt="" srcset="" class="contactElement">
-                </a></div>
+
+    <footer class="siteFooter">
+        <div class="footerLinks">
+            <a href="https://github.com/jerryperezperez" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="img/github.svg" alt=""></a>
+            <a href="mailto:jerryperezperez@hotmail.com" aria-label="Email"><img src="img/email.svg" alt=""></a>
+            <a href="https://linkedin.com/in/gerardo-arturo-perez-perez-59803524b" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="img/linkedin4.svg" alt=""></a>
         </div>
-        <div class="copyright">
-            <p>Made by Gerardo Arturo Pérez Pérez &copy 2023</p>
-        </div>
+        <p>© 2026 Gerardo Arturo Pérez Pérez</p>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
-
 </html>
